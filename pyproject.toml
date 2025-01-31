@@ -1,6 +1,16 @@
 [build-system]
-requires = ["flit_core >=3.2,<4"]
-build-backend = "flit_core.buildapi"
+requires = ["hatchling", "hatch-requirements-txt", "version-pioneer"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "version-pioneer"
+
+[tool.hatch.build.hooks.version-pioneer]
+
+[tool.version-pioneer]
+versionscript = "pytest_notebook/_version.py"
+versionfile-sdist = "pytest_notebook/_version.py"
+versionfile-wheel = "pytest_notebook/_version.py"
 
 [project]
 name = "pytest_notebook"

@@ -1,3 +1,17 @@
+# 🚧 Fork Notice 🚧
+
+This is a fork of the original [pytest-notebook](https://github.com/chrisjsewell/pytest-notebook) v0.10.0.
+
+Main fixes:
+
+- Dependency issues (they were too strictly old)
+- pytest 9 compatibility
+
+Maintenance changes:
+
+- flit -> hatchling backend for packaging
+- [version-pioneer](https://github.com/kiyoon/version-pioneer) for dynamic git versioning
+
 # pytest-notebook
 
 [![CI][ci-badge]][ci-link]

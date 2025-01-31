@@ -1,2 +1,5 @@
 """A pytest plugin for testing Jupyter Notebooks."""
-__version__ = "0.10.0"
+
+from ._version import get_version_dict
+
+__version__ = get_version_dict()["version"]
